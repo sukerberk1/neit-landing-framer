@@ -6144,12 +6144,25 @@
   </div>
 
   <script defer>
-    const elements = document.getElementsByClassName("force-contact-number");
-    for (let i = 0; i < elements.length; i++) {
-      const element = elements[i];
-      console.log("Setting contact number for element:", element);
-      element.innerHTML = "+852 4703 5361";
-    }
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        const elements = document.getElementsByClassName("force-contact-number");
+        for (let i = 0; i < elements.length; i++) {
+          const element = elements[i];
+          console.log("Setting contact number for element:", element);
+          element.innerHTML = "+852 4703 5361";
+        }
+
+
+        const elements2 = document.getElementsByClassName("framer-styles-preset-bzimv4");
+        for (let i = 0; i < elements2.length; i++) {
+          const element = elements2[i];
+          console.log("Setting contact number for element framer-styles-preset-bzimv4:", element);
+          element.innerHTML = "+852 4703 5361";
+        }
+      }, 300);
+    });
+
   </script>
 
 
